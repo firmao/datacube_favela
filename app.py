@@ -194,6 +194,35 @@ with col_f1:
 
 # --- 6. EXPLANATION ITEMS (Footer) ---
 st.divider()
+# --- ADD TO YOUR TABS ---
+tab_data = st.tabs(["...Previous Tabs...", "📊 Data Availability"])[-1]
+
+with tab_data:
+    st.header("Storage & Accessibility (FAIR)")
+    st.markdown("""
+    The BDC-Favelas Explorer is not just a tool; it is a **Resource**. 
+    All data produced by the HNSA pipeline is exported as Linked Open Data.
+    """)
+    
+    data_col1, data_col2 = st.columns(2)
+    
+    with data_col1:
+        st.write("### 🗂️ Dataset Statistics")
+        stats = {
+            "Total Triples": "12,450",
+            "Spatial Entities": "200",
+            "Ontology Classes": "14",
+            "License": "CC BY 4.0"
+        }
+        st.table(pd.DataFrame(stats.items(), columns=["Metric", "Value"]))
+        
+    with data_col2:
+        st.write("### 🔗 URI Strategy")
+        st.code("Prefix bdc: <https://bdc-explorer.org/resources/>", language="turtle")
+        st.write("Ensuring that every Favela node and Drone mission is **Findable** via a persistent identifier.")
+
+    st.info("Download the full Knowledge Graph [on GitHub](https://github.com/firmao/datacube_favela)")
+    
 st.expander("📖 Glossary & Technical Definitions").markdown("""
 - **STAC (SpatioTemporal Asset Catalog):** A JSON-based standard for making geospatial data findable. We map this to RDF to enable cross-domain reasoning.
 - **Parametric Drift:** A phenomenon where neural networks lose accuracy when encountering data slightly different from their training set, leading to 'hallucinations'.
