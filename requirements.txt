@@ -1,0 +1,25 @@
+# --- Core Web Interface ---
+streamlit==1.32.0
+
+# --- Numerical and Data Processing ---
+numpy==1.26.4
+pandas==2.2.1
+matplotlib==3.8.3
+
+# --- Semantic Web & Knowledge Graphs ---
+# Essential for RDF materialization and SPARQL validation
+rdflib==7.0.0
+
+# --- Geospatial & STAC Standards ---
+# Used for handling SpatioTemporal Asset Catalog metadata
+pystac==1.9.0
+shapely==2.0.3
+
+# --- Machine Learning / GCN Support ---
+# Basic GCN operations are in the script, but these support tensor operations
+scipy==1.12.0
+torch==2.2.1
+
+# --- API Interaction ---
+# Required for the Hugging Face Inference API calls
+requests==2.31.0
