@@ -1,16 +1,15 @@
-This `README.md` is designed to showcase the **BDC-Favelas Explorer** as a professional Research Infrastructure (RI). It highlights the **ISWC 2026** contribution, the neuro-symbolic methodology, and provides clear instructions for reproducibility.
+This `README.md` is designed to showcase the **BDC-Favelas Explorer** as a professional Research Infrastructure (RI). It highlights the contribution of the neuro-symbolic methodology and provides clear instructions for reproducibility.
 
 -----
 
 # BDC-Favelas Explorer: HNSA Infrastructure 🛰️
 
-[](https://iswc2026.semanticweb.org/)
 [](https://opensource.org/licenses/MIT)
 [](https://www.go-fair.org/fair-principles/)
 
 **HNSA (Hybrid Neuro-Symbolic Architecture)** is the core engine for the BDC-Favelas Explorer, a platform dedicated to mapping innovation ecosystems in informal urban settlements (favelas) in Brazil. By combining deep learning (GCN) with semantic reasoning (GeoSPARQL), we provide a verifiable, FAIR-compliant pipeline for socio-economic data.
 
-## 🌟 Key Contributions (ISWC 2026)
+## 🌟 Key Contributions
 
 This repository contains the implementation of the HNSA framework, which addresses three critical challenges in the Semantic Web:
 
@@ -60,13 +59,13 @@ Our experiments demonstrate that unconstrained neural models (Pure GCN) lose fac
 
 ## 📚 Citation
 
-If you use this infrastructure in your research, please cite our ISWC 2026 paper:
+If you use this infrastructure in your research, please cite our  2026 paper:
 
 ```bibtex
 @inproceedings{hnsa2026,
   title={HNSA: A FAIR-Compliant Neuro-Symbolic Infrastructure for Spatiotemporal Knowledge Graphs},
-  author={Anonymous Authors},
-  booktitle={Proceedings of the 25th International Semantic Web Conference (ISWC 2026)},
+  author={Andre Valdestilhas},
+  booktitle={TBA},
   year={2026}
 }
 ```
